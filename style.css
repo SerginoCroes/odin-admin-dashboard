@@ -36,6 +36,8 @@ body {
 
 .logo img {
     margin-right: 10px;
+    height: 44px;
+    width: 44px;
 }
 
 .logo h1 {
@@ -49,14 +51,14 @@ body {
 .menuitem {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin: 22px 10px;
+    margin: 22px 8px;
     font-size: 1.3rem;
 }
 
 .menuitem img {
     margin-right: 20px;
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
 }
 
 .menubot {
@@ -66,14 +68,26 @@ body {
 .botitem {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin: 22px 10px;
+    margin: 22px 8px;
     font-size: 1.3rem;
 }
 
 .botitem img {
     margin-right: 20px;
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
+}
+
+.botbuttons button {
+    height: 36px;
+    width: 90px;
+    border-radius: 18px;
+    border: 1px solid #0284c7;
+    background-color: #0284c7;
+    color: #ffffff;
+    margin: 0px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .header {
