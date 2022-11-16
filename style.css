@@ -10,6 +10,7 @@ div {
 
 body {
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .page {
@@ -29,22 +30,27 @@ body {
 .logo {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin: 30px 40px;
+    margin: 15px 15px;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
 }
 
 .logo h1 {
     font-size: 1.5rem;
 }
 
-.menubox {
-    margin: 55px 20px;
+.menutop {
+    margin: 50px 20px;
 }
 
 .menuitem {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin: 20px 10px;
-    font-size: 1.1rem;
+    margin: 22px 10px;
+    font-size: 1.3rem;
 }
 
 .menuitem img {
@@ -53,11 +59,15 @@ body {
     width: 20px;
 }
 
+.menubot {
+    margin: 70px 20px;
+}
+
 .botitem {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin: 20px 10px;
-    font-size: 1.1rem;
+    margin: 22px 10px;
+    font-size: 1.3rem;
 }
 
 .botitem img {
@@ -76,12 +86,30 @@ body {
     grid-area: 1 / 1;
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 20px;
+    padding: 20px 20px;
+}
+
+.tophead .search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
 }
 
 .search button {
     margin: 0px 10px;
+    background-color: #ffffff;
+    border: none;
+}
 
+.search button img{
+    height: 22px;
+    width: 22px;
+}
+
+.tophead .topbuttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
 }
 
 .search input{
@@ -93,11 +121,21 @@ body {
     border-radius: 15px;
 }
 
+.topbuttons button {
+    margin: 0px 10px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.topbuttons button img {
+    height: 22px;
+    width: 22px;
+}
+
 .bottomhead {
     display: grid;
     grid-template-columns: auto 1fr auto;
     padding: 20px;
-    box-shadow: 2px 2px 4px #bbbbbb;
 }
 
 .bottomhead .icon {
@@ -131,6 +169,8 @@ body {
 }
 
 .projects .project {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     margin: 0px 0px 30px 20px;
     padding: 25px;
     background-color: #ffffff;
@@ -142,6 +182,16 @@ body {
 .project p {
     font-size: 0.95rem;
     color: #555555;
+}
+
+.project .probuttons {
+    justify-self: right;
+}
+
+.project .probuttons img {
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px;
 }
 
 .content .announce {
@@ -185,7 +235,7 @@ body {
 
 .trending .box {
     background-color: #ffffff;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 20px 30px 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px #bbbbbb;
