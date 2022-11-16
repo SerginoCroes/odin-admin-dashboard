@@ -3,12 +3,16 @@
     padding: 0px;
 }
 
-div{
-    border: 1px solid red;
+div {
+    //border: 1px solid red;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
 }
 
 .page {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
@@ -20,11 +24,11 @@ div{
 }
 
 .logo {
-    margin: 0px;
+    margin: 40px 40px;
 }
 
 .menubox {
-    margin: 20px;
+    margin: 40px 20px;
 }
 
 .menuitem {
@@ -55,13 +59,13 @@ div{
 .content {
     grid-area: 2 / 2;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 5fr 5fr 4fr;
     background-color: #dddddd;
 }
 
-.content .projects{
-    grid-area: 1 / 1 / 3;
+.content .projects {
+    grid-area: 1 / 1 / 7 / 3;
     display: grid;
     grid-template-rows: auto 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -69,34 +73,60 @@ div{
 
 .projects .title {
     grid-area: 1 / 1 / 2 / 3;
+    margin: 20px 20px 0px;
 }
 
 .projects .project {
     margin: 20px;
     padding: 20px;
     background-color: #ffffff;
+    border-radius: 10px;
 }
 
-.content .announce{
-    grid-area: 1 / 2;
+.project p {
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.content .announce {
+    grid-area: 1 / 3 / 4;
+}
+
+.announce .title {
+    margin: 20px;
 }
 
 .announce .box {
     background-color: #ffffff;
     margin: 20px;
     padding: 20px;
+    border-radius: 10px;
 }
 
-.message{
+.message {
     margin: 10px;
 }
 
-.content .trending{
-    grid-area: 2 / 2;
+.message p {
+    font-size: 0.8rem;
+    color: #555555;
+}
+
+.content .trending {
+    grid-area: 4 / 3;
+}
+
+.trending .title {
+    margin: 20px 20px 0px;
 }
 
 .trending .box {
     background-color: #ffffff;
     margin: 20px;
     padding: 20px;
+    border-radius: 10px;
+}
+
+.trending .trend {
+    margin: 10px;
 }
