@@ -10,13 +10,13 @@ div {
 
 body {
     font-family: sans-serif;
-    overflow: hidden;
+   /* overflow: hidden; */
 }
 
 .page {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    /* grid-template-rows: 1fr 5fr; */
     height: 100vh;
 }
 
@@ -100,7 +100,7 @@ body {
     grid-area: 1 / 1;
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 20px 20px;
+    padding: 10px 30px 0px 30px;
 }
 
 .tophead .search {
@@ -110,7 +110,7 @@ body {
 }
 
 .search button {
-    margin: 0px 10px;
+    margin: 0px;
     background-color: #ffffff;
     border: none;
 }
@@ -124,11 +124,12 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
+    padding: 0px 40px;
 }
 
 .search input{
     height: 30px;
-    width: 70%;
+    width: 80%;
     margin: 0px 10px;
     background-color: #e2e8f0;
     border: 1px solid #ffffff;
@@ -136,7 +137,6 @@ body {
 }
 
 .topbuttons button {
-    margin: 0px 10px;
     background-color: #ffffff;
     border: none;
 }
@@ -146,18 +146,44 @@ body {
     width: 22px;
 }
 
+.topbuttons img {
+    margin: 0px 20px;
+    width: 48px;
+    height: 48px;
+}
+
+.topbuttons p {
+    font-weight: bold;
+}
+
 .bottomhead {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    padding: 20px;
+    align-items: center;
+    padding: 10px 40px;
 }
 
 .bottomhead .icon {
     margin: 0px 10px;
 }
 
-.bottomhead .welcome {
+.icon img {
+    width: 64px;
+    height: 64px;
+} 
+
+.bottomhead .welcome {    
     margin: 0px 10px;
+}
+
+.welcome p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.welcome h4{
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .content {
@@ -166,7 +192,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 10fr 4fr;
     padding: 0px 0px 30px;
-
+    box-shadow: inset 0px 2px 4px #bbbbbb;
     background-color: #e2e8f0;
 }
 
@@ -182,11 +208,15 @@ body {
     margin: 30px 20px 10px;
 }
 
+.title h4 {
+    font-size: 1.1rem;
+}
+
 .projects .project {
     display: grid;
     grid-template-rows: auto 1fr auto;
     margin: 0px 0px 30px 20px;
-    padding: 25px;
+    padding: 25px 20px;
     background-color: #ffffff;
     border-left: 8px solid #fbbf24;
     border-radius: 10px;
@@ -203,9 +233,9 @@ body {
 }
 
 .project .probuttons img {
-    width: 25px;
-    height: 25px;
-    margin: 0px 10px;
+    width: 22px;
+    height: 22px;
+    margin: 0px 12px;
 }
 
 .content .announce {
@@ -225,6 +255,10 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px #bbbbbb;
+}
+
+.box hr {
+    height: 1px;
 }
 
 .message {
@@ -256,5 +290,32 @@ body {
 }
 
 .trending .trend {
-    margin: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.trend img {
+    grid-area: 1 / 1;
+    margin: 10px 20px 0px 0px;
+    width: 48px;
+    height: 48px;
+}
+
+.trend .text {
+    grid-area: 1 / 2;
+}
+
+.text .nick {
+    font-weight: bold;
+}
+
+.text .about {
+    color: #555555;
+}
+
+.box {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
 }
